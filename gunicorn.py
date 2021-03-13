@@ -8,11 +8,11 @@ RUNDIR = os.path.join(BASEDIR, 'run')
 LOGDIR = os.path.join(BASEDIR, 'log')
 
 bind = '127.0.0.0:18000'
-workers =multiprocessing.cpu_count() * 2
+workers = 2
 chdir = BASEDIR
 pythonpath = BASEDIR
 daemon = False
-pidfile = os.path.join(RUNDIR, 'ocs.pid')
+pidfile = os.path.join(RUNDIR, 'alarmbot.pid')
 
 loglevel = 'info'
 accesslog = os.path.join(LOGDIR, 'access.log')
