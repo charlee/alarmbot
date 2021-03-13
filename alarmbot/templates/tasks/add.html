@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="py-5 container">
+  <h3>Add Task</h3>
+
+  <form method="POST">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="cron" class="form-label">Crontab</label>
+      <input type="text" class="form-control" id="cron" name="cron">
+    </div>
+
+    <div class="mb-3">
+      <input type="radio" name="task_type" id="task_type_tts" value="tts" checked>
+      <label for="task_type_tts">Text to speech</label>
+      <input type="text" class="form-control" name="text">
+    </div>
+
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary">Add</button>
+    </div>
+
+  </form>
+
+</section>
+{% endblock content %}

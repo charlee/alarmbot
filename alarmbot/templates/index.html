@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="py-5 container">
+  <h1>Tasks</h1>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Cron</th>
+        <th>Type</th>
+        <th>Text</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for task in tasks %}
+      <tr>
+        <td>{{ task.id }}</td>
+        <td>{{ task.cron }}</td>
+        <td>{{ task.task_type }}</td>
+        <td>{{ task.text }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <a href="/tasks/add">Add Task</a>
+</section>
+{% endblock %}
