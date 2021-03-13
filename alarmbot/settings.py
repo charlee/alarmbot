@@ -122,3 +122,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+GOOGLE_CLOUD_CREDENTIALS_FILE = os.environ.get('GOOGLE_CLOUD_CREDENTIALS_FILE', '')
+VOICE_DIR = os.path.join(BASE_DIR, 'voices')
