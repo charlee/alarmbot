@@ -124,4 +124,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 GOOGLE_CLOUD_CREDENTIALS_FILE = os.environ.get('GOOGLE_CLOUD_CREDENTIALS_FILE', '')
-VOICE_DIR = os.path.join(BASE_DIR, 'voices')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+VOICE_DIR = os.path.join(MEDIA_ROOT, 'voices')

@@ -2,6 +2,7 @@ from django.views import View
 from django.shortcuts import render, redirect
 from alarmbot.core.models import Task
 from alarmbot.core.tts import generate_tts_voice
+from alarmbot.core.voice import get_voice_path
 
 def home(request):
     
@@ -28,7 +29,13 @@ class AddTaskView(View):
 
         # Generate synthetic voice
         if task_type_str == 'tts':
-            generate_tts_voice(text, 'voice-%s.mp3' % task.id)
+            generate_tts_voice(text, get_voice_path(task.id))
 
         return redirect('/')
 
+
+
+class PlayVoiceView(View):
+
+    def get(self, request):
+        return render()
