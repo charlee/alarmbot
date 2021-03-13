@@ -1,3 +1,4 @@
+import os
 from django.views import View
 from django.shortcuts import render, redirect
 from alarmbot.core.models import Task
@@ -63,6 +64,10 @@ class DeleteTaskView(View):
         try:
             task = Task.objects.get(id=id)
             task.delete()
+
+            voice_file = get_voice_path(id)
+            if os.path.exists(voice_file):
+                os.remove(voice_file)
 
             return redirect('/')
         except Task.DoesNotExist:
