@@ -128,3 +128,5 @@ GOOGLE_CLOUD_CREDENTIALS_FILE = os.environ.get('GOOGLE_CLOUD_CREDENTIALS_FILE', 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 VOICE_DIR = os.path.join(MEDIA_ROOT, 'voices')
+
+MP3_PLAYER = 'mpg123'

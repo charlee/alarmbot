@@ -1,4 +1,5 @@
 from django.db import models
+from alarmbot.core.voice import get_voice_path
 
 class Task(models.Model):
 
@@ -13,3 +14,6 @@ class Task(models.Model):
 
     def voice_url(self):
         return '/media/voices/voice-%s.mp3' % self.id
+
+    def voice_file(self):
+        return get_voice_path(self.id)

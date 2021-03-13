@@ -2,7 +2,9 @@ from croniter import croniter
 from time import sleep
 from datetime import datetime
 from django.core.management.base import BaseCommand, CommandError
+from django.conf import settings
 from alarmbot.core.models import Task
+from alarmbot.core.player import play_mp3
 
 
 class Command(BaseCommand):
@@ -24,6 +26,7 @@ class Command(BaseCommand):
                 if croniter.match(task.cron, now):
                     # play task
                     print('  task %s (%s) matches, text=%s' % (task.id, task.cron, task.text))
+                    play_mp3(task.voice_file())
 
             sleep(60)
 
