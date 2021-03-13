@@ -1,0 +1,174 @@
+[2021-03-13 17:02:36 -0500] [36013] [INFO] Starting gunicorn 20.0.4
+[2021-03-13 17:02:36 -0500] [36013] [INFO] Listening at: http://0.0.0.0:18000 (36013)
+[2021-03-13 17:02:36 -0500] [36013] [INFO] Using worker: sync
+[2021-03-13 17:02:36 -0500] [36014] [INFO] Booting worker with pid: 36014
+[2021-03-13 17:02:36 -0500] [36014] [INFO] Worker exiting (pid: 36014)
+[2021-03-13 17:02:36 -0500] [36013] [INFO] Shutting down: Master
+[2021-03-13 17:02:36 -0500] [36013] [INFO] Reason: App failed to load.
+[2021-03-13 17:02:49 -0500] [36035] [INFO] Starting gunicorn 20.0.4
+[2021-03-13 17:02:49 -0500] [36035] [INFO] Listening at: http://0.0.0.0:18000 (36035)
+[2021-03-13 17:02:49 -0500] [36035] [INFO] Using worker: sync
+[2021-03-13 17:02:49 -0500] [36036] [INFO] Booting worker with pid: 36036
+[2021-03-13 17:02:49 -0500] [36036] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/cli/projects/alarmbot/.env/lib/python3.9/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/Users/cli/projects/alarmbot/.env/lib/python3.9/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/Users/cli/projects/alarmbot/.env/lib/python3.9/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/cli/projects/alarmbot/.env/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/cli/projects/alarmbot/.env/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/Users/cli/projects/alarmbot/.env/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/cli/projects/alarmbot/.env/lib/python3.9/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/local/Cellar/python@3.9/3.9.1_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'alarmbot.wsagi'
+[2021-03-13 17:02:49 -0500] [36036] [INFO] Worker exiting (pid: 36036)
+[2021-03-13 17:02:49 -0500] [36035] [INFO] Shutting down: Master
+[2021-03-13 17:02:49 -0500] [36035] [INFO] Reason: Worker failed to boot.
+[2021-03-13 17:02:53 -0500] [36046] [INFO] Starting gunicorn 20.0.4
+[2021-03-13 17:02:53 -0500] [36046] [INFO] Listening at: http://0.0.0.0:18000 (36046)
+[2021-03-13 17:02:53 -0500] [36046] [INFO] Using worker: sync
+[2021-03-13 17:02:53 -0500] [36047] [INFO] Booting worker with pid: 36047
+[2021-03-13 17:02:53 -0500] [36048] [INFO] Booting worker with pid: 36048
+[2021-03-13 17:02:53 -0500] [36049] [INFO] Booting worker with pid: 36049
+[2021-03-13 17:02:53 -0500] [36050] [INFO] Booting worker with pid: 36050
+[2021-03-13 17:02:53 -0500] [36051] [INFO] Booting worker with pid: 36051
+[2021-03-13 17:02:53 -0500] [36052] [INFO] Booting worker with pid: 36052
+[2021-03-13 17:02:53 -0500] [36053] [INFO] Booting worker with pid: 36053
+[2021-03-13 17:02:53 -0500] [36054] [INFO] Booting worker with pid: 36054
+[2021-03-13 17:02:53 -0500] [36055] [INFO] Booting worker with pid: 36055
+[2021-03-13 17:02:53 -0500] [36056] [INFO] Booting worker with pid: 36056
+[2021-03-13 17:02:53 -0500] [36057] [INFO] Booting worker with pid: 36057
+[2021-03-13 17:02:53 -0500] [36058] [INFO] Booting worker with pid: 36058
+[2021-03-13 17:02:53 -0500] [36059] [INFO] Booting worker with pid: 36059
+[2021-03-13 17:02:53 -0500] [36060] [INFO] Booting worker with pid: 36060
+[2021-03-13 17:02:53 -0500] [36061] [INFO] Booting worker with pid: 36061
+[2021-03-13 17:02:53 -0500] [36062] [INFO] Booting worker with pid: 36062
+[2021-03-13 17:02:53 -0500] [36063] [INFO] Booting worker with pid: 36063
+[2021-03-13 17:02:54 -0500] [36064] [INFO] Booting worker with pid: 36064
+[2021-03-13 17:02:54 -0500] [36065] [INFO] Booting worker with pid: 36065
+[2021-03-13 17:02:54 -0500] [36066] [INFO] Booting worker with pid: 36066
+[2021-03-13 17:02:54 -0500] [36067] [INFO] Booting worker with pid: 36067
+[2021-03-13 17:02:54 -0500] [36068] [INFO] Booting worker with pid: 36068
+[2021-03-13 17:02:54 -0500] [36069] [INFO] Booting worker with pid: 36069
+[2021-03-13 17:02:54 -0500] [36070] [INFO] Booting worker with pid: 36070
+[2021-03-13 17:02:54 -0500] [36071] [INFO] Booting worker with pid: 36071
+[2021-03-13 17:02:54 -0500] [36072] [INFO] Booting worker with pid: 36072
+[2021-03-13 17:02:54 -0500] [36075] [INFO] Booting worker with pid: 36075
+[2021-03-13 17:02:54 -0500] [36077] [INFO] Booting worker with pid: 36077
+[2021-03-13 17:02:54 -0500] [36078] [INFO] Booting worker with pid: 36078
+[2021-03-13 17:02:55 -0500] [36079] [INFO] Booting worker with pid: 36079
+[2021-03-13 17:02:55 -0500] [36080] [INFO] Booting worker with pid: 36080
+[2021-03-13 17:02:55 -0500] [36081] [INFO] Booting worker with pid: 36081
+[2021-03-13 17:02:56 -0500] [36046] [INFO] Handling signal: int
+[2021-03-13 22:02:56 +0000] [36055] [INFO] Worker exiting (pid: 36055)
+[2021-03-13 22:02:56 +0000] [36069] [INFO] Worker exiting (pid: 36069)
+[2021-03-13 22:02:56 +0000] [36080] [INFO] Worker exiting (pid: 36080)
+[2021-03-13 22:02:56 +0000] [36066] [INFO] Worker exiting (pid: 36066)
+[2021-03-13 22:02:56 +0000] [36054] [INFO] Worker exiting (pid: 36054)
+[2021-03-13 22:02:56 +0000] [36079] [INFO] Worker exiting (pid: 36079)
+[2021-03-13 22:02:56 +0000] [36061] [INFO] Worker exiting (pid: 36061)
+[2021-03-13 22:02:56 +0000] [36077] [INFO] Worker exiting (pid: 36077)
+[2021-03-13 22:02:56 +0000] [36063] [INFO] Worker exiting (pid: 36063)
+[2021-03-13 22:02:56 +0000] [36052] [INFO] Worker exiting (pid: 36052)
+[2021-03-13 22:02:56 +0000] [36067] [INFO] Worker exiting (pid: 36067)
+[2021-03-13 22:02:56 +0000] [36075] [INFO] Worker exiting (pid: 36075)
+[2021-03-13 22:02:56 +0000] [36060] [INFO] Worker exiting (pid: 36060)
+[2021-03-13 22:02:56 +0000] [36072] [INFO] Worker exiting (pid: 36072)
+[2021-03-13 22:02:56 +0000] [36050] [INFO] Worker exiting (pid: 36050)
+[2021-03-13 22:02:56 +0000] [36062] [INFO] Worker exiting (pid: 36062)
+[2021-03-13 22:02:56 +0000] [36048] [INFO] Worker exiting (pid: 36048)
+[2021-03-13 22:02:56 +0000] [36071] [INFO] Worker exiting (pid: 36071)
+[2021-03-13 22:02:56 +0000] [36059] [INFO] Worker exiting (pid: 36059)
+[2021-03-13 22:02:56 +0000] [36056] [INFO] Worker exiting (pid: 36056)
+[2021-03-13 22:02:56 +0000] [36049] [INFO] Worker exiting (pid: 36049)
+[2021-03-13 22:02:56 +0000] [36078] [INFO] Worker exiting (pid: 36078)
+[2021-03-13 22:02:56 +0000] [36065] [INFO] Worker exiting (pid: 36065)
+[2021-03-13 22:02:56 +0000] [36057] [INFO] Worker exiting (pid: 36057)
+[2021-03-13 22:02:56 +0000] [36068] [INFO] Worker exiting (pid: 36068)
+[2021-03-13 22:02:56 +0000] [36051] [INFO] Worker exiting (pid: 36051)
+[2021-03-13 22:02:56 +0000] [36081] [INFO] Worker exiting (pid: 36081)
+[2021-03-13 22:02:56 +0000] [36064] [INFO] Worker exiting (pid: 36064)
+[2021-03-13 22:02:56 +0000] [36047] [INFO] Worker exiting (pid: 36047)
+[2021-03-13 22:02:56 +0000] [36058] [INFO] Worker exiting (pid: 36058)
+[2021-03-13 22:02:56 +0000] [36070] [INFO] Worker exiting (pid: 36070)
+[2021-03-13 22:02:56 +0000] [36053] [INFO] Worker exiting (pid: 36053)
+[2021-03-13 17:02:57 -0500] [36046] [INFO] Shutting down: Master
+[2021-03-13 17:03:07 -0500] [36108] [INFO] Starting gunicorn 20.0.4
+[2021-03-13 17:03:07 -0500] [36108] [INFO] Listening at: http://0.0.0.0:18000 (36108)
+[2021-03-13 17:03:07 -0500] [36108] [INFO] Using worker: sync
+[2021-03-13 17:03:07 -0500] [36109] [INFO] Booting worker with pid: 36109
+[2021-03-13 17:03:07 -0500] [36110] [INFO] Booting worker with pid: 36110
+[2021-03-13 17:03:07 -0500] [36111] [INFO] Booting worker with pid: 36111
+[2021-03-13 17:03:07 -0500] [36112] [INFO] Booting worker with pid: 36112
+[2021-03-13 17:03:07 -0500] [36113] [INFO] Booting worker with pid: 36113
+[2021-03-13 17:03:07 -0500] [36114] [INFO] Booting worker with pid: 36114
+[2021-03-13 17:03:08 -0500] [36115] [INFO] Booting worker with pid: 36115
+[2021-03-13 17:03:08 -0500] [36116] [INFO] Booting worker with pid: 36116
+[2021-03-13 17:03:08 -0500] [36117] [INFO] Booting worker with pid: 36117
+[2021-03-13 17:03:08 -0500] [36118] [INFO] Booting worker with pid: 36118
+[2021-03-13 17:03:08 -0500] [36119] [INFO] Booting worker with pid: 36119
+[2021-03-13 17:03:08 -0500] [36120] [INFO] Booting worker with pid: 36120
+[2021-03-13 17:03:08 -0500] [36121] [INFO] Booting worker with pid: 36121
+[2021-03-13 17:03:08 -0500] [36122] [INFO] Booting worker with pid: 36122
+[2021-03-13 17:03:08 -0500] [36123] [INFO] Booting worker with pid: 36123
+[2021-03-13 17:03:08 -0500] [36124] [INFO] Booting worker with pid: 36124
+[2021-03-13 17:03:08 -0500] [36125] [INFO] Booting worker with pid: 36125
+[2021-03-13 17:03:08 -0500] [36126] [INFO] Booting worker with pid: 36126
+[2021-03-13 17:03:08 -0500] [36127] [INFO] Booting worker with pid: 36127
+[2021-03-13 17:03:08 -0500] [36128] [INFO] Booting worker with pid: 36128
+[2021-03-13 17:03:08 -0500] [36129] [INFO] Booting worker with pid: 36129
+[2021-03-13 17:03:09 -0500] [36130] [INFO] Booting worker with pid: 36130
+[2021-03-13 17:03:09 -0500] [36131] [INFO] Booting worker with pid: 36131
+[2021-03-13 17:03:09 -0500] [36132] [INFO] Booting worker with pid: 36132
+[2021-03-13 17:03:09 -0500] [36133] [INFO] Booting worker with pid: 36133
+[2021-03-13 17:03:09 -0500] [36134] [INFO] Booting worker with pid: 36134
+[2021-03-13 17:03:09 -0500] [36135] [INFO] Booting worker with pid: 36135
+[2021-03-13 17:03:09 -0500] [36138] [INFO] Booting worker with pid: 36138
+[2021-03-13 17:03:09 -0500] [36141] [INFO] Booting worker with pid: 36141
+[2021-03-13 17:03:09 -0500] [36142] [INFO] Booting worker with pid: 36142
+[2021-03-13 17:03:09 -0500] [36143] [INFO] Booting worker with pid: 36143
+[2021-03-13 17:03:09 -0500] [36144] [INFO] Booting worker with pid: 36144
+[2021-03-13 17:03:18 -0500] [36108] [INFO] Handling signal: int
+[2021-03-13 22:03:18 +0000] [36113] [INFO] Worker exiting (pid: 36113)
+[2021-03-13 22:03:18 +0000] [36110] [INFO] Worker exiting (pid: 36110)
+[2021-03-13 22:03:18 +0000] [36129] [INFO] Worker exiting (pid: 36129)
+[2021-03-13 22:03:18 +0000] [36126] [INFO] Worker exiting (pid: 36126)
+[2021-03-13 22:03:18 +0000] [36144] [INFO] Worker exiting (pid: 36144)
+[2021-03-13 22:03:18 +0000] [36138] [INFO] Worker exiting (pid: 36138)
+[2021-03-13 22:03:18 +0000] [36133] [INFO] Worker exiting (pid: 36133)
+[2021-03-13 22:03:18 +0000] [36127] [INFO] Worker exiting (pid: 36127)
+[2021-03-13 22:03:18 +0000] [36119] [INFO] Worker exiting (pid: 36119)
+[2021-03-13 22:03:18 +0000] [36142] [INFO] Worker exiting (pid: 36142)
+[2021-03-13 22:03:18 +0000] [36112] [INFO] Worker exiting (pid: 36112)
+[2021-03-13 22:03:18 +0000] [36111] [INFO] Worker exiting (pid: 36111)
+[2021-03-13 22:03:18 +0000] [36134] [INFO] Worker exiting (pid: 36134)
+[2021-03-13 22:03:18 +0000] [36135] [INFO] Worker exiting (pid: 36135)
+[2021-03-13 22:03:18 +0000] [36109] [INFO] Worker exiting (pid: 36109)
+[2021-03-13 22:03:18 +0000] [36116] [INFO] Worker exiting (pid: 36116)
+[2021-03-13 22:03:18 +0000] [36115] [INFO] Worker exiting (pid: 36115)
+[2021-03-13 22:03:18 +0000] [36132] [INFO] Worker exiting (pid: 36132)
+[2021-03-13 22:03:18 +0000] [36120] [INFO] Worker exiting (pid: 36120)
+[2021-03-13 22:03:18 +0000] [36117] [INFO] Worker exiting (pid: 36117)
+[2021-03-13 22:03:18 +0000] [36123] [INFO] Worker exiting (pid: 36123)
+[2021-03-13 22:03:18 +0000] [36124] [INFO] Worker exiting (pid: 36124)
+[2021-03-13 22:03:18 +0000] [36118] [INFO] Worker exiting (pid: 36118)
+[2021-03-13 22:03:18 +0000] [36125] [INFO] Worker exiting (pid: 36125)
+[2021-03-13 22:03:18 +0000] [36130] [INFO] Worker exiting (pid: 36130)
+[2021-03-13 22:03:18 +0000] [36131] [INFO] Worker exiting (pid: 36131)
+[2021-03-13 22:03:18 +0000] [36141] [INFO] Worker exiting (pid: 36141)
+[2021-03-13 22:03:18 +0000] [36114] [INFO] Worker exiting (pid: 36114)
+[2021-03-13 22:03:18 +0000] [36128] [INFO] Worker exiting (pid: 36128)
+[2021-03-13 22:03:18 +0000] [36121] [INFO] Worker exiting (pid: 36121)
+[2021-03-13 22:03:18 +0000] [36143] [INFO] Worker exiting (pid: 36143)
+[2021-03-13 22:03:18 +0000] [36122] [INFO] Worker exiting (pid: 36122)
+[2021-03-13 17:03:19 -0500] [36108] [INFO] Shutting down: Master
