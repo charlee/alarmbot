@@ -9,3 +9,5 @@ voices/
 .DS_Store
 
 /static/
+/run/
+/log/
