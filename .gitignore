@@ -7,3 +7,5 @@ db.sqlite3
 *.mp3
 voices/
 .DS_Store
+
+/static/

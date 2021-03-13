@@ -1,6 +1,5 @@
-{% extends 'base.html' %}
-
-{% block content %}
+{% extends 'base.html' %} {% block content %}
+{% load static %}
 <section class="py-5 container">
   <h1>Tasks</h1>
 
@@ -12,6 +11,8 @@
         <th>Type</th>
         <th>Text</th>
         <th>Preview</th>
+        <th>Enabled</th>
+        <th>Action</th>
       </tr>
     </thead>
     <tbody>
@@ -23,8 +24,19 @@
         <td>{{ task.text }}</td>
         <td>
           <audio controls preload="none">
-            <source src="{{ task.voice_url }}" type="audio/mp3">
+            <source src="{{ task.voice_url }}" type="audio/mp3" />
           </audio>
+        </td>>
+        <td>{% if task.enabled %} ✅ {% else %} ❌ {% endif %} </td>
+        <td>
+          {% if task.enabled %}
+            <a href="javascript:disableTask({{ task.id }})">Disable</a>,
+          {% else %}
+            <a href="javascript:enableTask({{ task.id }})">Enable</a>,
+          {% endif %}
+
+          <a href="/tasks/edit/{{ task.id }}">Edit</a>,
+          <a href="javascript:deleteTask({{ task.id }})">Delete</a>
         </td>
       </tr>
       {% endfor %}
@@ -33,4 +45,8 @@
 
   <a href="/tasks/add">Add Task</a>
 </section>
+<form method="POST" id="action-form" style="display: none">
+{% csrf_token %}
+</form>
+<script src="{% static 'js/home.js' %}"></script>
 {% endblock %}

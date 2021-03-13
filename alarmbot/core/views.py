@@ -34,8 +34,36 @@ class AddTaskView(View):
         return redirect('/')
 
 
+class EnableTaskView(View):
+    def post(self, request, id):
+        try:
+            task = Task.objects.get(id=id)
+            task.enabled = True
+            task.save()
 
-class PlayVoiceView(View):
+            return redirect('/')
+        except Task.DoesNotExist:
+            raise Http404
 
-    def get(self, request):
-        return render()
+
+class DisableTaskView(View):
+    def post(self, request, id):
+        try:
+            task = Task.objects.get(id=id)
+            task.enabled = False
+            task.save()
+
+            return redirect('/')
+        except Task.DoesNotExist:
+            raise Http404
+
+
+class DeleteTaskView(View):
+    def post(self, request, id):
+        try:
+            task = Task.objects.get(id=id)
+            task.delete()
+
+            return redirect('/')
+        except Task.DoesNotExist:
+            raise Http404
