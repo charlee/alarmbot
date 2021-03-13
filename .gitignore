@@ -1,6 +1,6 @@
 __pycache__
 .vscode/
 .env/
-db.sqlite
+db.sqlite3
 *.pyc
 *.swp
