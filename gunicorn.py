@@ -7,7 +7,7 @@ BASEDIR = os.path.dirname(os.path.abspath(__file__))
 RUNDIR = os.path.join(BASEDIR, 'run')
 LOGDIR = os.path.join(BASEDIR, 'log')
 
-bind = '127.0.0.0:18000'
+bind = '127.0.0.1:18000'
 workers = 2
 chdir = BASEDIR
 pythonpath = BASEDIR
