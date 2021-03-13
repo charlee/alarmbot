@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<section class="py-5 container">
+<section class="py-5 container add-task-form">
   <h3>Add Task</h3>
 
   <form method="POST">
@@ -10,6 +10,7 @@
     <div class="mb-3">
       <label for="cron" class="form-label">Crontab</label>
       <input type="text" class="form-control" id="cron" name="cron">
+       <div id="cronHelp" class="form-text">Format: minute hour day(month) month day(week)</div>
     </div>
 
     <div class="mb-3">
