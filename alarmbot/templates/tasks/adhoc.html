@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="py-5 container add-task-form">
+  <h3>Send Adhoc Message</h3>
+
+  <form method="POST">
+    {% csrf_token %}
+    <div class="mb-3">
+      <input type="text" class="form-control" name="text">
+    </div>
+
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary">Send</button>
+    </div>
+
+  </form>
+
+</section>
+{% endblock content %}
