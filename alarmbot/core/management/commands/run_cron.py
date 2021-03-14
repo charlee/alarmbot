@@ -12,7 +12,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         # wait until :00 second
         now = timezone.localtime()
-        wait_secs = 60 - now.second - now.microsecond / 1000000
+        wait_secs = 59 - now.second
         print('Current time: %s, wait for %s seconds' % (now.isoformat(), wait_secs))
         sleep(wait_secs)
 
@@ -28,6 +28,6 @@ class Command(BaseCommand):
                     print('  task %s (%s) matches, text=%s' % (task.id, task.cron, task.text))
                     play_mp3(task.voice_file())
 
-            sleep(60)
+            sleep(30)
 
 
