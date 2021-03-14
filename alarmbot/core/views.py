@@ -48,7 +48,7 @@ class AdhocTaskView(View):
         generate_tts_voice(text, file)
         play_mp3(file)
 
-        return redirect('/')
+        return redirect('/tasks/adhoc')
 
 
 class EnableTaskView(View):
