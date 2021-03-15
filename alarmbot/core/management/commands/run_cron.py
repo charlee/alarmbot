@@ -28,6 +28,6 @@ class Command(BaseCommand):
                     print('  task %s (%s) matches, text=%s' % (task.id, task.cron, task.text))
                     play_mp3(task.voice_file())
 
-            sleep(30)
+            sleep(60)
 
 
